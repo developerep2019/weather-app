@@ -7,7 +7,7 @@ document.getElementById('searchBtn').addEventListener('click', () => {
     if (cityNameString == '' || cityNameString == ' ') {
         alert('Invalid City Name')
     } else {
-        fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city()}&appid=d6d47722dc3390a6963bb96230a71b82`)
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city()}&appid=d6d47722dc3390a6963bb96230a71b82`)
             .then(response => response.json())
             .then(data => {
                 // Main Temp Checker
